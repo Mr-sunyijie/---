@@ -1,0 +1,13 @@
+<view class='container'>
+    <image src='{{ coverUrl }}' style='opacity:0.2;'></image>
+</view>
+    <view class='post' style='display: flex; justify-content: center;'>
+        <image src='{{ coverUrl }}' 
+                style='height: 326rpx; width: 239rpx; border: 1px solid #000;margin: 20px auto;box-shadow:10px 10px 10px #777;position: absolute;top:21rpx;left:36rpx;'></image>
+</view>
+<view class='content' style='padding: 15px;margin-top:52px;'>
+    <view>
+        <text style='font-weight: bold; font-size: 20px;'>简介:</text>
+    </view>
+    <text style='color: #aaa;'>{{ description }}</text>
+</view>

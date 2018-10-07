@@ -1,0 +1,16 @@
+<view class='search' style='margin-bottom: 13px;background-color:#000;height:132rpx;'>
+    <input placeholder='请输入关键字' bindinput='saveKeyWords' bindconfirm='confirm' bindfocus='clear' value='{{ value }}'/>
+</view>
+<scroll-view class='content' bindscrolltolower='scrolltolower' bindscroll='scroll' scroll-y='true' lower-threshold='0px;' enable-back-to-top>
+    <view class='cover'>
+        <view style='text-align: center;' wx:for="{{ movies }}" class='content-item'>
+            <navigator url='../detail/detail?description={{ item.description }}&coverUrl={{ item.coverUrl }}'>
+                <image src='{{ item.coverUrl }}' style='height: 400rpx; width:220rpx; border: 1px solid #000;'/>
+                <view>
+                    <text style='font-size:13px;'>{{ item.title }}</text>
+                </view>
+            </navigator>
+        </view>   
+    </view>
+    
+</scroll-view>

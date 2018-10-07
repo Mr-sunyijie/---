@@ -1,0 +1,12 @@
+<scroll-view class='content' bindscrolltolower='scrolltolower' scroll-y='true' lower-threshold='0px;' enable-back-to-top>
+    <view class='cover'>
+        <view style='text-align: center;' wx:for="{{ movies }}" class='content-item'>
+            <navigator url='../detail/detail?description={{ item.description }}&coverUrl={{ item.coverUrl }}'>
+                <image src='{{ item.coverUrl }}' style='height: 400rpx; width:220rpx; border: 1px solid #000;'/>
+                <view>
+                    <text style='font-size:13px;'>{{ item.title }}</text>
+                </view>
+            </navigator>
+        </view>   
+    </view>    
+</scroll-view>

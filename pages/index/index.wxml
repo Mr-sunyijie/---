@@ -1,0 +1,16 @@
+<scroll-view class='content' bindscrolltolower='scrolltolower' bindscroll='scroll' scroll-y='true' lower-threshold='0px;' enable-back-to-top>
+    <view class='content-item' wx:for='{{ movies }}' bindtap='navigateToDetail'>
+        <navigator style='height: 100%; width: 100%;' url='../detail/detail?description={{ item.description }}&coverUrl={{ item.coverUrl }}'>
+           <view class='container'>
+                <view class='cover'>    
+                     <image src='{{item.coverUrl}}'></image>    
+                </view>
+            
+                <view class='content-item-info'>
+                     <text class='content-item-info-title'>{{ item.title }}</text>
+                     <text class='content-item-info-rating'>{{ item.rating }}</text>
+                </view>
+           </view>
+        </navigator>
+    </view>
+</scroll-view>

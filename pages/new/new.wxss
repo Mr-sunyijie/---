@@ -1,0 +1,19 @@
+input{
+    padding:11px;
+    background:#fff;
+    width:80%;
+    border-radius:6px;
+    margin:0 auto;
+
+}
+.item{
+    display: inline-block;
+    margin: 15rpx;
+}
+.cat{
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    border-left:4px solid #000;
+    margin:22rpx 3rpx
+}

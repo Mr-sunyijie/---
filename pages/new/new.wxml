@@ -1,0 +1,61 @@
+<view class='cat'>
+    <text>喜剧</text>
+    <text bindtap='navigateToJoyMovies'>更多</text>
+</view>
+<scroll-view scroll-x style='width: 100%;white-space: nowrap;' >
+    <block wx:for='{{ joyMovies }}'>
+        <view class='item'>
+            <image src='{{ item.coverUrl }}' style='width:220rpx;height: 400rpx; border: 1px solid #000;'></image>
+        </view>
+    </block>
+</scroll-view>
+
+
+<view class='cat'>
+    <text>爱情</text>
+    <text bindtap='navigateToLoveMovies'>更多</text>
+</view>
+<scroll-view scroll-x style='width: 100%;white-space: nowrap;' >
+    <block wx:for='{{ loveMovies }}'>
+        <view class='item'>
+            <image src='{{ item.coverUrl }}' style='width:220rpx;height: 400rpx; border: 1px solid #000;'></image>
+        </view>
+    </block>
+</scroll-view>
+
+
+<view class='cat'>
+    <text>动作</text>
+    <text bindtap='navigateToActionMovies'>更多</text>
+</view>
+<scroll-view scroll-x style='width: 100%;white-space: nowrap;' >
+    <block wx:for='{{ actionMovies }}'>
+        <view class='item'>
+            <image src='{{ item.coverUrl }}' style='width:220rpx;height: 400rpx; border: 1px solid #000;'></image>
+        </view>
+    </block>
+</scroll-view>
+
+<view class='cat'>
+    <text>科幻</text>
+    <text bindtap='navigateToTecMovies'>更多</text>
+</view>
+<scroll-view scroll-x style='width: 100%;white-space: nowrap;' >
+    <block wx:for='{{ tecMovies }}'>
+        <view class='item'>
+            <image src='{{ item.coverUrl }}' style='width:220rpx;height: 400rpx; border: 1px solid #000;'></image>
+        </view>
+    </block>
+</scroll-view>
+
+<view class='cat'>
+    <text>恐怖</text>
+    <text bindtap='navigateToKongMovies'>更多</text>
+</view>
+<scroll-view scroll-x style='width: 100%;white-space: nowrap;' >
+    <block wx:for='{{ kongMovies }}'>
+        <view class='item'>
+            <image src='{{ item.coverUrl }}' style='width:220rpx;height: 400rpx; border: 1px solid #000;'></image>
+        </view>
+    </block>
+</scroll-view>

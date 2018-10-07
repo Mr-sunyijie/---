@@ -1,0 +1,27 @@
+.cover{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.content{
+    width: 100%;
+    height: 600px;
+}
+input{
+    padding:11px;
+    background:#fff;
+    width:80%;
+    border-radius:6px;
+    margin:0 auto;
+
+}
+image{
+    box-shadow:10px 10px 10px #777;
+}
+text{
+    color: #666;
+}
+.content-item{
+   margin-bottom:5px;
+}
